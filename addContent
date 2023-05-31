@@ -1,0 +1,6 @@
+export default function addContent(element, content) {
+ if (content) {
+  if (typeof content === 'string') element.innerHTML = content;
+  else element.appendChild(content);
+ }
+}
