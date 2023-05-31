@@ -12,4 +12,4 @@ export { default as sliceArr } from './sliceArr';
 export { default as firstCharUpper } from './sliceArr';
 export { default as checkInputValues } from './checkInputValues';
 export { default as createElement } from './createElement';
-export { default as addContent } from './configureContent';
+export { default as addContent } from './addContent';
