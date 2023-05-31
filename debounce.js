@@ -1,7 +1,9 @@
-export default function (fn, time) {
- let timeout;
- return function (args) {
-  clearTimeout(timeout);
-  timeout = setTimeout(fn.bind(this, args), time);
- };
+export default function debounce(fn, time) {
+  let timeout;
+  return function (...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+      fn.apply(this, args);
+    }, time);
+  };
 }
